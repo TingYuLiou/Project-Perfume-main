@@ -22,7 +22,7 @@
     }
 }
 .banner{
-    background-image: url(/image/index/banner.jpg);
+    background-image: url("/image/index/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 295px 0;
@@ -178,7 +178,7 @@
     } 
 }
 .subs{
-    background-image: url(/image/index/footer.jpg);
+    background-image: url("/image/index/footer.jpg");
     background-size: cover;
     background-position: center;
     padding: 312px 0 132px 0;
@@ -225,7 +225,7 @@
         }
     }
 }
-.banner, .product-list, .sale-list, .news, .subs{
+.banner, .product-list, .sale-list, .news{
     margin-bottom: 60px;
     @media (max-width: 767px){ 
         margin-bottom: 40px;

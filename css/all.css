@@ -162,7 +162,7 @@ a:hover {
 }
 
 .banner {
-  background-image: url(/image/index/banner.jpg);
+  background-image: url("/image/index/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 295px 0;
@@ -332,7 +332,7 @@ p, span {
 }
 
 .subs {
-  background-image: url(/image/index/footer.jpg);
+  background-image: url("/image/index/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 312px 0 132px 0;
@@ -384,11 +384,11 @@ p, span {
   }
 }
 
-.banner, .product-list, .sale-list, .news, .subs {
+.banner, .product-list, .sale-list, .news {
   margin-bottom: 60px;
 }
 @media (max-width: 767px) {
-  .banner, .product-list, .sale-list, .news, .subs {
+  .banner, .product-list, .sale-list, .news {
     margin-bottom: 40px;
   }
 }
@@ -449,11 +449,8 @@ p, span {
   padding: 40px 0;
 }
 .card-list .container {
-  gap: 30px;
-}
-.card-list .container {
-  max-width: 100%;
   flex-wrap: wrap;
+  gap: 30px;
 }
 @media (max-width: 767px) {
   .card-list .container {
@@ -463,8 +460,11 @@ p, span {
   }
 }
 .card-list .card-pic {
-  max-width: 255px;
+  max-width: 240px;
   overflow: clip;
+}
+.card-list p {
+  margin: 0;
 }
 .card-list a {
   color: #916000;
@@ -493,7 +493,7 @@ p, span {
 }
 
 .subs {
-  background-image: url(/image/index/footer.jpg);
+  background-image: url("/image/index/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 312px 0 132px 0;

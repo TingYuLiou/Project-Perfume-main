@@ -47,14 +47,10 @@
 }
 
 .card-list{
-
     padding: 40px 0;
     .container{
-        gap: 30px;
-    }
-    .container{
-        max-width:100%;
         flex-wrap: wrap;
+        gap: 30px;
         @media (max-width: 767px){
             max-width:100%;
             flex-wrap: wrap;
@@ -62,8 +58,11 @@
         }
     }
     .card-pic{
-        max-width: 255px;
+        max-width: 240px;
         overflow: clip;
+    }
+    p{
+        margin: 0;
     }
     a{
         color:#916000;
@@ -90,13 +89,8 @@
     }
 
 }
-
-
-
-
-
 .subs{
-    background-image: url(/image/index/footer.jpg);
+    background-image: url("/image/index/footer.jpg");
     background-size: cover;
     background-position: center;
     padding: 312px 0 132px 0;
