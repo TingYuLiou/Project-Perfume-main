@@ -1,0 +1,145 @@
+/* product 樣式 */
+
+.header{
+    background: #fff;
+    a{
+        color: #8D8D8D;
+    }
+    span{
+        margin-top:10px;
+    }
+    .menu{
+        gap: 32px;
+        p{
+            display: inline;
+        }
+    }
+    @media (max-width: 767px){
+        padding: 9px 0;
+        img{
+            width: 128px;
+        }
+        .menu{
+            max-height: 0px; 
+            overflow:hidden; 
+            }
+    }
+}
+.navbar{
+    background: #916000;
+    margin-bottom: 42px;
+    .menu{
+        gap: 28px;
+    }
+    a{
+        display: block;
+        color: #FFF;
+        font-size: 20px;
+        padding: 14px 0;
+    }
+    @media (max-width: 767px){
+            max-height: 0px; 
+            overflow:hidden; 
+            img{
+                width: 128px;
+            }
+        }
+}
+
+.card-list{
+
+    padding: 40px 0;
+    .container{
+        gap: 30px;
+    }
+    .container{
+        max-width:100%;
+        flex-wrap: wrap;
+        @media (max-width: 767px){
+            max-width:100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .card-pic{
+        max-width: 255px;
+        overflow: clip;
+    }
+    a{
+        color:#916000;
+    }
+    .original-price{
+        color:#8D8D8D;
+        text-decoration: line-through;
+        margin-left: 8px;
+    }
+    .page{
+        text-align: center;
+        margin: 60px 0;
+        @media (max-width: 767px){
+            margin: 40px 0;
+        }
+        a{
+            font-size: 20px;
+            color: #000;
+            &:hover{
+                color: #916000;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+.subs{
+    background-image: url(/image/index/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 312px 0 132px 0;
+    @media (max-width: 767px){
+        background-position: left;
+        background-size: 150%;
+    }
+    h3{
+        color:#8D8D8D;
+        padding-bottom: 20px;
+    }
+    input[type="text"]{
+        background: #FFF;
+        color:#8D8D8D;
+        border:2px solid #916000;
+        border-radius: 4px 0 0 4px;
+        padding: 20px 24px;
+
+    }
+    input[type="submit"]{
+        background:#916000;
+        color:#FFF;
+        border:2px solid #916000;
+        border-radius:0 4px 4px 0;
+        padding: 20px 24px;
+    }
+}
+.footer{
+    background: #916000;
+    padding: 28px 0;
+    a, span{
+    color: #FFFFFF;
+    }
+    img{
+        margin-right: 20px;
+    }
+    .menu{
+        gap: 36px;
+        @media (max-width: 767px){
+                width: 0px;
+                max-height: 0px; 
+                overflow:hidden; 
+                display: none;
+        }
+    }
+}

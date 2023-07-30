@@ -1,0 +1,23 @@
+/* 自定義reset */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    /*outline: 1px solid;*/
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+span{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        opacity: 0.8;
+    }
+
+}
