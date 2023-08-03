@@ -117,13 +117,13 @@
         color:#8D8D8D;
         padding-bottom: 20px;
     }
-    input[type="text"]{
+    input[type="email"]{
         background: #FFF;
         color:#8D8D8D;
         border:2px solid #916000;
         border-radius: 4px 0 0 4px;
         padding: 20px 24px;
-
+        outline: #916000;
     }
     input[type="submit"]{
         background:#916000;
