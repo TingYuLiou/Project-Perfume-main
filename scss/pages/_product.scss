@@ -38,8 +38,7 @@
         padding: 14px 0;
     }
     @media (max-width: 767px){
-            max-height: 0px; 
-            overflow:hidden; 
+        display: none;
             img{
                 width: 128px;
             }
@@ -52,21 +51,37 @@
         flex-wrap: wrap;
         gap: 30px;
         @media (max-width: 767px){
-            max-width:100%;
             flex-wrap: wrap;
             justify-content: center;
+        }
+    }
+    .sale-card{
+        max-width: 25%;
+        @media (max-width:767px) {
+            max-width: 44%;
         }
     }
     .card-pic{
         max-width: 240px;
         overflow: clip;
     }
+    .card-text{
+        .title{
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            &:hover{
+                color: #916000;
+            }
+            @media (max-width:767px) {
+                font-size: 20px;
+            }
+        }
+    }
     p{
         margin: 0;
     }
-    a{
-        color:#916000;
-    }
+
     .original-price{
         color:#8D8D8D;
         text-decoration: line-through;
@@ -90,7 +105,7 @@
 
 }
 .subs{
-    background-image: url("/image/index/footer.jpg");
+    background-image: url("../image/index/footer.jpg");
     background-size: cover;
     background-position: center;
     padding: 312px 0 132px 0;
@@ -130,10 +145,12 @@
     .menu{
         gap: 36px;
         @media (max-width: 767px){
-                width: 0px;
-                max-height: 0px; 
-                overflow:hidden; 
                 display: none;
+        }
+    }
+    @media (max-width: 767px){
+        .copyright span{
+            margin-left: auto;
         }
     }
 }

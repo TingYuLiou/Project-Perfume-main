@@ -79,6 +79,7 @@ a:hover {
 body {
   font-family: "SF Pro Text", "Pingfang";
   line-height: 1.5;
+  outline: 1px solid #000;
 }
 
 .container {
@@ -154,15 +155,21 @@ a:hover {
 .header .menu p {
   display: inline;
 }
+.header .phone-menu {
+  display: none;
+}
 @media (max-width: 767px) {
   .header .menu {
-    max-height: 0px;
-    overflow: hidden;
+    display: none;
+  }
+  .header .phone-menu {
+    display: flex;
+    gap: 32px;
   }
 }
 
 .banner {
-  background-image: url("/image/index/banner.jpg");
+  background-image: url("../image/index/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 295px 0;
@@ -178,7 +185,7 @@ a:hover {
   width: 50%;
   margin-left: auto;
 }
-.banner input[type=button] {
+.banner .button {
   text-align: center;
   font-size: 20px;
   color: #fff;
@@ -187,24 +194,30 @@ a:hover {
   border-radius: 30px;
   padding: 8px 132px;
 }
-.banner input[type=button]:hover {
+.banner .button:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 @media (max-width: 767px) {
+  .banner {
+    height: 480px;
+  }
   .banner .bn-text {
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
+  .banner .button {
+    padding: 12px 100px;
+  }
 }
 
 .product-list p {
   font-size: 20px;
-  margin-bottom: 52px;
+  margin-bottom: 16px;
 }
 @media (max-width: 767px) {
-  .product-list p p {
+  .product-list .info-text p {
     margin-bottom: 8px;
   }
 }
@@ -229,6 +242,7 @@ a:hover {
 @media (max-width: 767px) {
   .product-list .info-text, .product-list .info-text-double {
     padding: 0px;
+    margin-bottom: 32px;
   }
 }
 .product-list .info-text-double {
@@ -332,7 +346,7 @@ p, span {
 }
 
 .subs {
-  background-image: url("/image/index/footer.jpg");
+  background-image: url("../image/index/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 312px 0 132px 0;
@@ -347,12 +361,13 @@ p, span {
   color: #8D8D8D;
   padding-bottom: 20px;
 }
-.subs input[type=text] {
+.subs input[type=email] {
   background: #FFF;
   color: #8D8D8D;
   border: 2px solid #916000;
   border-radius: 4px 0 0 4px;
   padding: 20px 24px;
+  outline: #916000;
 }
 .subs input[type=submit] {
   background: #916000;
@@ -377,10 +392,12 @@ p, span {
 }
 @media (max-width: 767px) {
   .footer .menu {
-    width: 0px;
-    max-height: 0px;
-    overflow: hidden;
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .footer .copyright span {
+    margin-left: auto;
   }
 }
 
@@ -437,8 +454,7 @@ p, span {
 }
 @media (max-width: 767px) {
   .navbar {
-    max-height: 0px;
-    overflow: hidden;
+    display: none;
   }
   .navbar img {
     width: 128px;
@@ -454,20 +470,37 @@ p, span {
 }
 @media (max-width: 767px) {
   .card-list .container {
-    max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+.card-list .sale-card {
+  max-width: 25%;
+}
+@media (max-width: 767px) {
+  .card-list .sale-card {
+    max-width: 44%;
   }
 }
 .card-list .card-pic {
   max-width: 240px;
   overflow: clip;
 }
+.card-list .card-text .title {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-list .card-text .title:hover {
+  color: #916000;
+}
+@media (max-width: 767px) {
+  .card-list .card-text .title {
+    font-size: 20px;
+  }
+}
 .card-list p {
   margin: 0;
-}
-.card-list a {
-  color: #916000;
 }
 .card-list .original-price {
   color: #8D8D8D;
@@ -493,7 +526,7 @@ p, span {
 }
 
 .subs {
-  background-image: url("/image/index/footer.jpg");
+  background-image: url("../image/index/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 312px 0 132px 0;
@@ -538,9 +571,11 @@ p, span {
 }
 @media (max-width: 767px) {
   .footer .menu {
-    width: 0px;
-    max-height: 0px;
-    overflow: hidden;
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .footer .copyright span {
+    margin-left: auto;
   }
 }/*# sourceMappingURL=all.css.map */
